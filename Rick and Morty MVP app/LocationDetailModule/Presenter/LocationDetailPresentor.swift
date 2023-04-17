@@ -116,7 +116,7 @@ class LocationDetailPresenter: LocationDetailViewPresenterProtocol {
     }
     
     func tapOnTheCharacter(character: Character?) {
-        print()
+        router?.showCharacterDetails(character: character)
     }
     
 

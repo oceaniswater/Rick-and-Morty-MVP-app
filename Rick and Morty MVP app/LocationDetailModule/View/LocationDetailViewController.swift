@@ -132,7 +132,7 @@ private extension LocationDetailViewController {
         view.addSubview(residentsCollectionView)
         residentsCollectionView.snp.makeConstraints { make in
             make.leading.trailing.equalTo(view.safeAreaLayoutGuide).inset(10)
-            make.top.equalTo(residentsTitleLabel.snp.bottom).inset(10)
+            make.top.equalTo(residentsTitleLabel.snp.bottom).offset(10)
             make.height.equalTo(120)
         }
     }
