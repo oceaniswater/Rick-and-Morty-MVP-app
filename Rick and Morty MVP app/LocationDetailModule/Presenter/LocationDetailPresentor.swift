@@ -111,7 +111,6 @@ class LocationDetailPresenter: LocationDetailViewPresenterProtocol {
     }
     
     func numberOfItemsInSection(in section: Int) -> Int {
-        print("\(residents.count)  numberOfItemsInSection")
         return self.residents.count
     }
     
