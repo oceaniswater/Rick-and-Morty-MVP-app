@@ -120,7 +120,6 @@
 		863CAEB729D30BFF00AD2E65 = {
 			isa = PBXGroup;
 			children = (
-				86448E8729F03C0700C933B0 /* Media */,
 				863CAEC229D30BFF00AD2E65 /* Rick and Morty MVP app */,
 				863CAED929D30C0000AD2E65 /* Rick and Morty MVP appTests */,
 				863CAEC129D30BFF00AD2E65 /* Products */,
@@ -140,6 +139,7 @@
 		863CAEC229D30BFF00AD2E65 /* Rick and Morty MVP app */ = {
 			isa = PBXGroup;
 			children = (
+				86448E8729F03C0700C933B0 /* Media */,
 				86622CDE29D444AA006ED840 /* Extensions */,
 				86622CE629D44750006ED840 /* ServiceLayer */,
 				863CAF0429D3330D00AD2E65 /* App */,
