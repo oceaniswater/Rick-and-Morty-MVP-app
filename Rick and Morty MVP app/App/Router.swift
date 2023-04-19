@@ -34,7 +34,6 @@ class Router: RouterProtocol {
     
     
     func initialViewController() -> UITabBarController? {
-//        if let navigationController = navigationController {
             guard let mainViewController = self.assembleyBuilder?.createMainModule(router: self),
                   let charactersViewController = self.assembleyBuilder?.createCharactersModule(router: self),
                   let locationsViewController = self.assembleyBuilder?.createLocationsModule(router: self) else {return nil}
@@ -46,10 +45,6 @@ class Router: RouterProtocol {
             guard let tabBarController = self.assembleyBuilder?.createTabBarModule(router: self, viewControllers: [characterNC!, homeNC!, locationNC!]) else {return nil}
             
             return tabBarController
-
-            
-            
-//        }
     }
     
     // MARK: - Characters - Character Detail
