@@ -18,6 +18,7 @@ protocol RouterProtocol: RouterMain {
     
     func showLocations()
     func showLocationDetail(location: LocationResult?)
+    func showCharacterDetailsFromLocation(character: Character?)
 }
 
 class Router: RouterProtocol {
@@ -68,6 +69,16 @@ class Router: RouterProtocol {
             guard let detailViewController = self.assembleyBuilder?.createCharacterDetailModule(character: character, router: self) else {return}
             DispatchQueue.main.async {
                 characterNC.pushViewController(detailViewController, animated: true)
+            }
+
+        }
+    }
+    
+    func showCharacterDetailsFromLocation(character: Character?) {
+        if let locationNC = locationNC {
+            guard let detailViewController = self.assembleyBuilder?.createCharacterDetailModule(character: character, router: self) else {return}
+            DispatchQueue.main.async {
+                locationNC.pushViewController(detailViewController, animated: true)
             }
 
         }
