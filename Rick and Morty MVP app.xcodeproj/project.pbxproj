@@ -16,8 +16,6 @@
 		863CAF0129D3150500AD2E65 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 863CAF0029D3150500AD2E65 /* SnapKit */; };
 		863CAF0329D332FF00AD2E65 /* AssembleyModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CAF0229D332FF00AD2E65 /* AssembleyModuleBuilder.swift */; };
 		863CAF0729D33F0600AD2E65 /* CharactersPresenterTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 863CAF0629D33F0600AD2E65 /* CharactersPresenterTest.swift */; };
-		86448E8A29F03C7E00C933B0 /* Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.07.49.gif in Resources */ = {isa = PBXBuildFile; fileRef = 86448E8829F03C7E00C933B0 /* Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.07.49.gif */; };
-		86448E8B29F03C7E00C933B0 /* Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.09.14.gif in Resources */ = {isa = PBXBuildFile; fileRef = 86448E8929F03C7E00C933B0 /* Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.09.14.gif */; };
 		864B405D29D71C1F00F614DB /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B405C29D71C1F00F614DB /* AppConstants.swift */; };
 		864B405F29D74BC100F614DB /* CharactersViewController+SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 864B405E29D74BC100F614DB /* CharactersViewController+SearchBar.swift */; };
 		86622CCF29D43DEE006ED840 /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86622CCE29D43DEE006ED840 /* CharactersViewController.swift */; };
@@ -68,8 +66,6 @@
 		863CAEFD29D314B800AD2E65 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		863CAF0229D332FF00AD2E65 /* AssembleyModuleBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssembleyModuleBuilder.swift; sourceTree = "<group>"; };
 		863CAF0629D33F0600AD2E65 /* CharactersPresenterTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersPresenterTest.swift; sourceTree = "<group>"; };
-		86448E8829F03C7E00C933B0 /* Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.07.49.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.07.49.gif"; path = "../../../../Desktop/Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.07.49.gif"; sourceTree = "<group>"; };
-		86448E8929F03C7E00C933B0 /* Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.09.14.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.09.14.gif"; path = "../../../../Desktop/Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.09.14.gif"; sourceTree = "<group>"; };
 		864B405C29D71C1F00F614DB /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
 		864B405E29D74BC100F614DB /* CharactersViewController+SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CharactersViewController+SearchBar.swift"; sourceTree = "<group>"; };
 		86622CCE29D43DEE006ED840 /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
@@ -139,7 +135,6 @@
 		863CAEC229D30BFF00AD2E65 /* Rick and Morty MVP app */ = {
 			isa = PBXGroup;
 			children = (
-				86448E8729F03C0700C933B0 /* Media */,
 				86622CDE29D444AA006ED840 /* Extensions */,
 				86622CE629D44750006ED840 /* ServiceLayer */,
 				863CAF0429D3330D00AD2E65 /* App */,
@@ -207,15 +202,6 @@
 				86622CF529D4B13B006ED840 /* RouterTest.swift */,
 			);
 			path = TestCharactersModule;
-			sourceTree = "<group>";
-		};
-		86448E8729F03C0700C933B0 /* Media */ = {
-			isa = PBXGroup;
-			children = (
-				86448E8829F03C7E00C933B0 /* Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.07.49.gif */,
-				86448E8929F03C7E00C933B0 /* Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.09.14.gif */,
-			);
-			path = Media;
 			sourceTree = "<group>";
 		};
 		86622CCD29D43D3A006ED840 /* CharactersModule */ = {
@@ -461,10 +447,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				86448E8A29F03C7E00C933B0 /* Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.07.49.gif in Resources */,
 				863CAED029D30C0000AD2E65 /* LaunchScreen.storyboard in Resources */,
 				863CAECD29D30C0000AD2E65 /* Assets.xcassets in Resources */,
-				86448E8B29F03C7E00C933B0 /* Simulator Screen Recording - iPhone 14 - 2023-04-19 at 16.09.14.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
