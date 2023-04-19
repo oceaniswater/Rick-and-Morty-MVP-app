@@ -42,6 +42,8 @@
 		869D134329DDE8DB00314999 /* LocationDetailViewController+CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D134229DDE8DB00314999 /* LocationDetailViewController+CollectionView.swift */; };
 		869D134529DDEC6C00314999 /* ResidentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D134429DDEC6C00314999 /* ResidentCollectionViewCell.swift */; };
 		869D134729DDF1C300314999 /* LocationDetailPresentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 869D134629DDF1C300314999 /* LocationDetailPresentor.swift */; };
+		86E117BC29EEE5E4006E4FDA /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E117BB29EEE5E4006E4FDA /* MainTabBarController.swift */; };
+		86E117BE29EEE741006E4FDA /* TabBarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86E117BD29EEE741006E4FDA /* TabBarPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +91,8 @@
 		869D134229DDE8DB00314999 /* LocationDetailViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationDetailViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		869D134429DDEC6C00314999 /* ResidentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentCollectionViewCell.swift; sourceTree = "<group>"; };
 		869D134629DDF1C300314999 /* LocationDetailPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailPresentor.swift; sourceTree = "<group>"; };
+		86E117BB29EEE5E4006E4FDA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		86E117BD29EEE741006E4FDA /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +139,7 @@
 		863CAEC229D30BFF00AD2E65 /* Rick and Morty MVP app */ = {
 			isa = PBXGroup;
 			children = (
+				86E117BA29EEE591006E4FDA /* TabBarModule */,
 				86622CDE29D444AA006ED840 /* Extensions */,
 				86622CE629D44750006ED840 /* ServiceLayer */,
 				863CAF0429D3330D00AD2E65 /* App */,
@@ -353,6 +358,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		86E117BA29EEE591006E4FDA /* TabBarModule */ = {
+			isa = PBXGroup;
+			children = (
+				86E117BB29EEE5E4006E4FDA /* MainTabBarController.swift */,
+				86E117BD29EEE741006E4FDA /* TabBarPresenter.swift */,
+			);
+			path = TabBarModule;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -471,11 +485,13 @@
 				86622CD229D44037006ED840 /* CharactersViewController+TableView.swift in Sources */,
 				86622CCF29D43DEE006ED840 /* CharactersViewController.swift in Sources */,
 				864B405F29D74BC100F614DB /* CharactersViewController+SearchBar.swift in Sources */,
+				86E117BE29EEE741006E4FDA /* TabBarPresenter.swift in Sources */,
 				86622CEF29D45968006ED840 /* CharacterDetailViewController.swift in Sources */,
 				863CAEC429D30BFF00AD2E65 /* AppDelegate.swift in Sources */,
 				869D133829DDA0E300314999 /* LocationsViewController+SearchBar.swift in Sources */,
 				869D134529DDEC6C00314999 /* ResidentCollectionViewCell.swift in Sources */,
 				86622CDA29D44351006ED840 /* CharacterTableViewCell.swift in Sources */,
+				86E117BC29EEE5E4006E4FDA /* MainTabBarController.swift in Sources */,
 				863CAEC629D30BFF00AD2E65 /* SceneDelegate.swift in Sources */,
 				869D134329DDE8DB00314999 /* LocationDetailViewController+CollectionView.swift in Sources */,
 				869D133229DD971C00314999 /* LocationsModel.swift in Sources */,

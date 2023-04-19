@@ -12,6 +12,7 @@ struct K {
     struct Design {
         static let appBackgroundColor = UIColor(named: "appBackgroundColor")
         static let appTextColor = UIColor(named: "appTextColor")
+        static let appUnselectedTextColor = UIColor(named: "appUnselectedTextColor")
         
         static let buttonSelectedBackgroundColor = UIColor(named: "buttonSelectedBackgroundColor")
         

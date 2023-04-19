@@ -23,10 +23,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let navController = UINavigationController()
         let assembleyBuilder = AssembleyModuleBuilder()
         let router = Router(navigationController: navController, assembleyBuilder: assembleyBuilder)
-        router.initialViewController()
+        
         
         window = UIWindow(windowScene: windowScene)
-        window?.rootViewController = navController
+        window?.rootViewController = router.initialViewController()
         
         window?.makeKeyAndVisible()
     }
