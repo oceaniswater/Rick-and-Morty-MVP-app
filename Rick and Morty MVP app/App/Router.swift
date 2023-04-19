@@ -8,8 +8,6 @@
 import UIKit
 
 protocol RouterMain {
-    var navigationController: UINavigationController? {get set}
-    var tabBarController: UITabBarController? {get set}
     var assembleyBuilder: AssembleyBuilderProtocol? {get set}
 }
 
@@ -18,43 +16,34 @@ protocol RouterProtocol: RouterMain {
     func showCharacters()
     func showCharacterDetails(character: Character?)
     
-    func popToCharactersVC()
-    func popToRootVC()
-    
     func showLocations()
     func showLocationDetail(location: LocationResult?)
 }
 
 class Router: RouterProtocol {
-    var tabBarController: UITabBarController?
-    
-    var navigationController: UINavigationController?
-    
     var characterNC: UINavigationController?
     var locationNC: UINavigationController?
     var homeNC: UINavigationController?
     
     var assembleyBuilder: AssembleyBuilderProtocol?
     
-    init(navigationController: UINavigationController, assembleyBuilder: AssembleyBuilderProtocol) {
-        self.navigationController = navigationController
+    init(assembleyBuilder: AssembleyBuilderProtocol) {
         self.assembleyBuilder = assembleyBuilder
     }
     
     
     func initialViewController() -> UITabBarController? {
 //        if let navigationController = navigationController {
-            guard let mainViewController = self.assembleyBuilder?.createMainModule(router: self) else {return nil}
-            guard let charactersViewController = self.assembleyBuilder?.createCharactersModule(router: self) else {return nil}
-            guard let locationsViewController = self.assembleyBuilder?.createLocationsModule(router: self) else {return nil}
-        
+            guard let mainViewController = self.assembleyBuilder?.createMainModule(router: self),
+                  let charactersViewController = self.assembleyBuilder?.createCharactersModule(router: self),
+                  let locationsViewController = self.assembleyBuilder?.createLocationsModule(router: self) else {return nil}
+
             characterNC = UINavigationController(rootViewController: charactersViewController)
             locationNC = UINavigationController(rootViewController: locationsViewController)
             homeNC = UINavigationController(rootViewController: mainViewController)
             
             guard let tabBarController = self.assembleyBuilder?.createTabBarModule(router: self, viewControllers: [characterNC!, homeNC!, locationNC!]) else {return nil}
             
-//            navigationController.viewControllers = [tabBarController]
             return tabBarController
 
             
@@ -81,19 +70,6 @@ class Router: RouterProtocol {
                 characterNC.pushViewController(detailViewController, animated: true)
             }
 
-        }
-    }
-    
-    func popToCharactersVC() {
-        if let navigationController = navigationController {
-            guard let charactersViewController = self.assembleyBuilder?.createCharactersModule(router: self) else {return}
-            navigationController.popToViewController(charactersViewController, animated: true)
-        }
-    }
-    
-    func popToRootVC() {
-        if let navigationController = navigationController {
-            navigationController.popToRootViewController(animated: true)
         }
     }
     

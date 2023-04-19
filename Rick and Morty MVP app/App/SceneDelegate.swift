@@ -20,9 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         
         
-        let navController = UINavigationController()
         let assembleyBuilder = AssembleyModuleBuilder()
-        let router = Router(navigationController: navController, assembleyBuilder: assembleyBuilder)
+        let router = Router(assembleyBuilder: assembleyBuilder)
         
         
         window = UIWindow(windowScene: windowScene)

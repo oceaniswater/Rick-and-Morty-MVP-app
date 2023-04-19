@@ -48,7 +48,12 @@ class LocationsViewController: UIViewController {
 
 private extension LocationsViewController {
     func setupView() {
-        title = "Locations"
+        guard let navBar = navigationController?.navigationBar else { return }
+    
+        navBar.tintColor = K.Design.appTextColor
+
+        navigationItem.backButtonTitle = "Back"
+        
         view.backgroundColor = K.Design.appBackgroundColor
         
         view.addSubview(searchController)

@@ -48,7 +48,12 @@ class CharactersViewController: UIViewController {
 
 private extension CharactersViewController {
     func setupView() {
-        title = "Characters"
+        guard let navBar = navigationController?.navigationBar else { return }
+    
+        navBar.tintColor = K.Design.appTextColor
+
+        navigationItem.backButtonTitle = "Back"
+        
         view.backgroundColor = K.Design.appBackgroundColor
         
         view.addSubview(searchController)

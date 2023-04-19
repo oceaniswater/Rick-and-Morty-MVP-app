@@ -32,7 +32,7 @@ class CharacterDetailPresenter: CharacterDetailViewPresenterProtocol {
     }
     
     func tapButtonToRoot() {
-        router?.popToRootVC()
+        
     }
     
     public func setCharacter() {
