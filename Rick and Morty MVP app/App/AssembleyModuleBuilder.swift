@@ -14,9 +14,19 @@ protocol AssembleyBuilderProtocol {
     
     func createLocationsModule(router: RouterProtocol) -> UIViewController
     func createLocationDetailModule(location: LocationResult?, router: RouterProtocol) -> UIViewController
+    
+    func createTabBarModule(router: RouterProtocol, viewControllers: [UIViewController]) -> UITabBarController
 }
 
 class AssembleyModuleBuilder: AssembleyBuilderProtocol {
+    
+    func createTabBarModule(router: RouterProtocol, viewControllers: [UIViewController]) -> UITabBarController {
+        let tabBar = MainTabBarController()
+        let presenter = TabBarPresenter(tabBar: tabBar, router: router, viewControllers: viewControllers)
+        tabBar.presenter = presenter
+        return tabBar
+        
+    }
 
     func createMainModule(router: RouterProtocol) -> UIViewController {
         let view = MainViewController()
