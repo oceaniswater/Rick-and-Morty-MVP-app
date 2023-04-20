@@ -91,6 +91,8 @@
 		869D134229DDE8DB00314999 /* LocationDetailViewController+CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LocationDetailViewController+CollectionView.swift"; sourceTree = "<group>"; };
 		869D134429DDEC6C00314999 /* ResidentCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResidentCollectionViewCell.swift; sourceTree = "<group>"; };
 		869D134629DDF1C300314999 /* LocationDetailPresentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailPresentor.swift; sourceTree = "<group>"; };
+		86BEDC6229F15064007A4B47 /* 2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 2.gif; sourceTree = "<group>"; };
+		86BEDC6329F15064007A4B47 /* 1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 1.gif; sourceTree = "<group>"; };
 		86E117BB29EEE5E4006E4FDA /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		86E117BD29EEE741006E4FDA /* TabBarPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -139,6 +141,7 @@
 		863CAEC229D30BFF00AD2E65 /* Rick and Morty MVP app */ = {
 			isa = PBXGroup;
 			children = (
+				86BEDC6429F1508B007A4B47 /* New Group */,
 				86E117BA29EEE591006E4FDA /* TabBarModule */,
 				86622CDE29D444AA006ED840 /* Extensions */,
 				86622CE629D44750006ED840 /* ServiceLayer */,
@@ -356,6 +359,15 @@
 				869D134429DDEC6C00314999 /* ResidentCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		86BEDC6429F1508B007A4B47 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				86BEDC6329F15064007A4B47 /* 1.gif */,
+				86BEDC6229F15064007A4B47 /* 2.gif */,
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		86E117BA29EEE591006E4FDA /* TabBarModule */ = {
